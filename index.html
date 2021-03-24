@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>JavaScript Jabber Zone</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+    <link rel="stylesheet" href="css/blog.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   
+    <!-- My links -->
+    <link rel="stylesheet" href="blog.css">
+
+    <link rel="stylesheet" href="prism.css">
+    
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+
+</head>
+  <body>
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="text-muted" href="#">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#" id="blogTitle">JavaScript Jabber Zone</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-muted" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        <button class="btn btn-sm btn-outline-secondary" onclick="openForm()" href="#">Sign in</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="border nav d-flex justify-content-between">
+      <a class="p-2 text-muted " href="index.html">Home</a>
+      <a class="p-2 text-muted " href="about.html">About</a>
+      <a class="p-2 text-muted" href="learning.html">Learning</a>
+      <a class="p-2 text-muted" href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="row">
+    <div class="col-md-7 px-0 align-self-center">
+      <img class="img-fluid" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\logo.PNG" alt="JavaScript Jabber Zone logo">
+       </div>
+      <div class=".col-md-6 align-self-center">
+        <br>
+          <p> Welcome to the </p>
+          <p>JavaScript Jabber Zone!</p>
+         
+        </div>
+    </div>
+  </div>
+
+<!--
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        Most Recent
+      </h3>
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">Lets talk about let, const, var and scope</h2>
+        <p class="blog-post-meta">09/12/2020 by <a href="#">Christopher Pavelsek</a></p>
+        <hr>
+        <img  class="img-fluid" alt="let, var, const" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\1_kZXDtoVrpI8Ynwjo2jtKSA.png">
+        <p>Whether you are brand new to coding or have been coding for years, it is worth your time to read up on the declarations available in JavaScript and their best uses.  A Quick refresher on the different declarations follows below:  </p>
+        <h3> "var" </h3>
+        <p>“var” declares a variable containing information, similar to “let” and “const”, however “var” declarations can be of global scope when defined outside a function or function scope if used within a function block. </p>
+        <p>Global Scope Example:</p>  
+         <pre class="language-js">
+        <code>
+          var car = “Volkswagen”;
+
+          function carType(){
+              var car = “Volkswagen”;
+          }
+          
+          </code>
+        </pre>
+      
+        <p>Function Scope Example:</p>
+        <pre class="language-js">
+        <code>
+          function carType(){
+            var car = “Volkswagen”;
+            }
+        </code>
+      </pre>
+        <p>“var” can also be declared without being initialized.  If you do not initialize the variable, it will then default to “undefined”.  For instance below, the variable “shoe” will set itself to “undefined” since I didn’t set it to Nike or Adidas. </p>
+        <p>Ex: var shoe; //undefined</p>
+        <p>“var” variables can be re-declared and updated. </p>
+        <pre class="language-js">
+        <code>
+          var car = “Volkswagen”; 
+          car = “Toyota”; 
+          </code>
+        </pre>
+        <p>or</p> 
+        <pre class="language-js">
+        <code>
+          var car = “Volkswagen”; 
+          var car = “Toyota”; 
+
+          </code>
+          </pre>
+
+        <p>Having a solid understanding of how and why “var” is used to declare variables can help to better understand “let” or “const” and when to utilize those tools. </p>
+        <h3> "let" </h3>
+        <p>“let” declares variables similar to “var” however with “let” you can utilized Block Scope.  This means that variables declared using “let” inside a block cannot be accessed from outside the block.</p>
+        <p>Block Scope Example:</p>
+        <pre class="language-js">
+        <code>let car = “Toyota”; 
+          function carType(){
+          var car = “Volkswagen”;
+          }
+          </code>
+          </pre>  
+        <p>Console.log(car); // Toyota will populate since let was used to declare “Volkswagen” within our function.</p>
+        <p>“let” can be updated within its scope however it cannot be re-declared within its scope. “let” becomes a very useful choice if you are reusing a variable name and don’t want to run into scope issues. </p>
+        <h3> "const" </h3>
+        <p>“const” variables maintain their values no matter what.  These variables can be used within block scope similarly to “let”.  “const” variables cannot be updated or re-declared and as such every “const” declaration must be initialized at the time of declaration.  </p>
+        <p>It's important to note that features are constantly being updated and expanded upon so pay attention to updates with JavaScript! 😊 </p>
+        </div><!-- /.blog-post -->
+
+        <hr>
+      <div class="blog-post">
+        <h2 class="blog-post-title">A Regular Old Expression</h2>
+        <p class="blog-post-meta">9/06/20 by <a href="#">Christopher Pavelsek</a></p>
+        <hr>
+
+        <p>Regular Expressions in JavaScript are objects that describe a pattern of characters.  These expressions are very useful in searching for a text pattern or a text replacement operation.  Below we will break down the syntax and investigate some useful examples of Regular Expressions!        </p>
+        <p>Syntax: As shown below, regular expressions consist of a pattern enclosed between slashes.</p>
+        <p> /pattern/modifiers; </p>
+        <p> Example: </p>
+        <pre class="language-js">
+        <code>let re = /the/;</code>
+        </pre>
+        <p>You can also call the constructor function of RegExp object as shown below. </p>
+        <p>Example:</p>
+        <pre class="language-js">
+        <code>let re = new RegExp(‘the’);</code>
+        </pre>
+        <p>We now have a Regular Expression that is looking for a pattern of ‘the’ located in any text.  Now that we have our example, we can use several methods paired with this expression to achieve various goals.  </p>
+        <img class="img-fluid" alt="Responsive image" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\regExpressions.png">
+        <p>We can use the “searsch()” method to search a string and return the index of the match of the Regular Expression we created about - let re = /the/;  </p>
+        <p>Example: </p>
+        <pre class="language-js">
+        <code>
+          function findFunction( ){
+            let sampleText = ‘We wanted to go to the store, therefore we went’;
+            let re = /the/;
+            console.log(sampleText.search(re));
+            //expected output 19 as that is the index location where “the” is first found.
+            } 
+            
+        </code>
+        </pre>
+        <p>There are a ton of useful examples of using Regular Expressions in your code, for instance these would come in handy as a Boolean if you are looking to validate a form field using the test() method. </p>
+      
+      </div><!-- /.blog-post -->
+      <hr>
+      <div class="blog-post">
+        <h2 class="blog-post-title">One key to improving UI - Reducing Cognitive Load</h2>
+        <p class="blog-post-meta"> 9/02/20 by <a href="#">Christopher Pavelsek</a></p>
+        <hr>
+        <p>Reducing Cognitive Load.  To me, this is a very fancy way to say keep it simple; don’t overload your user with too much at one time.  Make the users goal straightforward and obtainable while trying to make that process as easy as possible.  If I were to go on a site to register for a ping pong tournament, I want that process to be as simple as possible with as little mental toll put on me as possible.  If I’m struggling to get my goal accomplished or find it too difficult, I’m likely to scrap the whole thing and move on. </p>
+        <img class="img-fluid" alt="mentallyStressedMan" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\ugh.jpg">
+        <p>In order to reduce Cognitive Load on the end user as much as you can, try to keep the following ideas in mind. </p>
+        <h3>Avoid visual overstimulation:</h3>
+        <img class="img-fluid" alt="MessyWebsite" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\MessyWebsite.png">
+        <p>Having endless amounts of images, links, popups can be very distracting to the user.  Its wonderful that we have so many design tools these days to engineer our wildest creations, however sometimes it can be over designed. 
+           A good thought to keep in mind is that Miller’s Law states that generally we can hold seven pieces of information in our short-term memory (https://xd.adobe.com/ideas/process/information-architecture/6-ways-to-reduce-cognitive-load-for-a-better-ui/).  If you try to envision what that may look like when designing a website, it can help to give a cleaner appearance and better experience for the user. </p>
+        <h3>Consistency:</h3>
+          <p>A website that is designed uniformly across the board is 
+            the best way to organize a site.  Fonts should match up from one place to another generally, icons shouldn’t change color from page to page, etc.  One way to help with this is to offer less information or choices so that there is
+             less chance for inconsistencies.  One way to help with this would be a style guide where fonts and design decisions can be made in one location for simplicity sake.  Below is an example of poor consistency.</p>
+          <img class="img-fluid" alt="inconsistent Image" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\inconsistent.png">
+          <p>The fonts are different from place to place, different sizes/colors and fonts all over.  The alignment of the content also is all over the place which makes it harder to follow.  This website will be less attractive to users or users who visit will be much
+             less likely to stick around when they see the non-uniform layout. </p>
+          
+          <img  class="img-fluid" alt="consistent Image" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\consistent.png">
+          <p>The example above is a much better look at a consistent page design.  The font from the logo on the top left corner matches the large center piece logo.  The same blue/black tones match along the page and pop well against a lighter background.  There isn’t a ton of information crowding the space either, it is straightforward 
+            and looks very efficient.  I would say this is a much better idea of how to organize content.  </p>
+          <h3>Questionable Interface:</h3>
+          <p>This one should be obvious to any designer, however its important to mention.  A user shouldn’t have trouble trying to decide 
+            where they go to sign in or where they can click to find out more information.  When you are creating a layout, things may appear obvious to you since you created them with your overall vision in mind; however it may not be apparent to most users.  Try to put yourself in the mind of the average user or have someone test out the site just to understand their thought process across the page.  The example below is a very minimalist design, which isn’t a bad take however the layout is a little strange and its not very clear where each button would take you or if they are all click able options.</p>
+          <img class="img-fluid" alt="confusing UI" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\nonIntuitive.png">
+          <p>All the examples we looked at today are aimed to reduce cognitive load for the end user.  We want the experience to be as frictionless and thought free as possible for whoever is visiting the site.  Keep these three key points in mind when you look to design
+             your next page or even as you visit other pages across the web.</p>
+        
+        </div><!-- /.blog-post -->
+        <hr>
+        <hr>
+        <div class="blog-post">
+          <h2 class="blog-post-title">Pay Attention to Feedback</h2>
+          <p class="blog-post-meta"> 9/14/20 by <a href="#">Christopher Pavelsek</a></p>
+          <hr>
+          <p>Feedback is such a huge part of the UI experience!  When I sign into an account online, I like to see a positive affirmation that I have signed in.  If I click to buy something, I expect to see some confirmation that my payment went through, and the order was processed.  According to David Hogue, UX Design Lead at Google, feedback answers questions across four categories: location, current status, future status and outcomes/results.  Below I will go more into detail on good examples of feedback in UI and how they contribute to positive design for the user.  
+          </p>
+          <h3>Location:</h3>
+          <img class="img-fluid" alt="Location Example" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\feedback1.png">
+          <p>This above example is a perfect example of locational feedback.  There are many options available on this left hand navigation bar, however the feedback lets me know I am on the “diary” section.  Also clearly listed would be the day, week, month or view selectors across the top bar.  A nice bold red is used to distinguish the difference between the selected tab and non selected tabs.  These two features allow for the user to know where they are at all times, making for a better UI experience.    
+          </p>
+          <h3>Current Status:</h3>
+          <img class="img-fluid" alt="status example" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\feedback2.jpg">
+          <p>A progress or status indicator is another great tool to keep the user engaged.  The above picture is a great look at a loan tracking application/site.  These processes can seem complicated or intimidating to a user however with a progression indicator like this, it's reassuring to the user to know exactly where they are at.  As shown, you can see the indicator moves along from initial questions all the way to a completed deal.  </p>
+          <h3>Future Status:</h3>
+          <img class="img-fluid" alt="current status exmaple" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\feedback3.jpg">
+            <p>Making sure that your UI updates the user on the future status of their task is very important.  The example listed here is from H&M, a clothing retailer, and this is the feedback a user will see once they complete the order.  The user is  not left wondering what their status is after spending their hard earned money.  This confirmation lets them know what will happen next and confirms the transaction.  Without something like this it may be rather ambiguous to the user if the order completed or what the next steps may be. </p>
+            <h3>Outcome/Results:</h3>
+            <img class="img-fluid" alt="outcome example" src="C:\Users\flips\OneDrive\Desktop\JavaScript 2\blog\images\feedback4.png">
+            <p>Inuit always presents a fantastic UI experience in my opinion.  Turbo Tax for example displays constant feedback from start to finish for a tax return process.  The example above is a final confirmation page recapping all the details of the tax return.  It does a great job clearly listing at the top that the process has completed and below you can see the highlights from the process along with dates when they occurred.  I always like the simplistic yet welcoming display that this website provides.</p>
+           <p>As you can see providing constant feedback to the user makes for a much more complete UI experience.  If there is persistent feedback, you may tend not to notice it however you will certainly notice it if a website is lacking those updates.            </p>
+          
+          </div><!-- /.blog-post -->
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+    
+
+
+      <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://facebook.com">Facebook</a></li>
+        </ol>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+
+<div class="form-popup" class="toast" id="myForm" data-autohide="false">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn cancel" >Close</button>
+    </form>
+  </div>
+
+<footer class="blog-footer">
+  
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!--Prism -->
+<script rel="JavaScript" src="prism.js"> </script>
+
+<link rel="JavaScript" src="blog.js">
+&copy; Copyright 2020 JavaScript Jabber Zone
+
+</body>
+</html>

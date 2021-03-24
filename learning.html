@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>JavaScript Jabber Zone</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+    <link rel="stylesheet" href="css/blog.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   
+    <!-- My links -->
+    <link rel="stylesheet" href="blog.css">
+    <link rel="JavaScript" href="blog.js">
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container">
+<header class="blog-header py-3">
+  <div class="row flex-nowrap justify-content-between align-items-center">
+    
+      
+    <div class="col-4 pt-1">
+      <a class="text-muted" href="#">Subscribe</a>
+    </div>
+    <div class="col-4 text-center">
+      <a class="blog-header-logo text-dark" href="#" id="blogTitle">JavaScript Jabber Zone</a>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+      <a class="text-muted" href="#" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+      </a>
+      <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      <button class="btn btn-sm btn-outline-secondary" onclick="openForm()" href="#">Sign in</button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-scroller py-1 mb-2">
+  <nav class="border nav d-flex justify-content-between">
+      <a class="p-2 text-muted " href="index.html">Home</a>
+      <a class="p-2 text-muted " href="about.html">About</a>
+      <a class="p-2 text-muted" href="learning.html">Learning</a>
+      <a class="p-2 text-muted" href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+  <div class=" px-0">
+    <!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <!--Section heading-->
+  <div class=" p-4 mb-3 rounded"><h4 class="font-italic">Resources</h4>
+      <p class="mb-0">Eager to learn?  Follow these links to fantastic resources! </p>
+      <hr>
+      <a href="https://www.freecodecamp.org/">Free Code Camp</a>
+      <p>Free Code Camp covers a very wide variety of topics and coding languages.  They post tons of great content and their tutorials are a wonderful place for a new coder to begin their journey!</p>
+      <hr>
+      <a href="https://www.sololearn.com/">Solo Learn</a>
+      <p>Solo Learn is another FANTASTIC and FREE resource available.  Follow along at your own pace to brush up on languages you may not be comfortable with or dive into a new langauge.  </p>
+      <hr>
+      <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a>
+      <p>Geeks for Geeks is a site that I recommend to someone who is farther along in their coding journey.  There is so much content on this site, I don't know where to begin!  Blogs, courses, articles, etc.  Beginners can absolutley learn from the articles or courses however there are a plethora of practice problems for the more advanced coder as well.</p>
+    </div>
+  <div class="row">
+
+      <!--Grid column-->
+    
+
+  </div>
+
+</section>
+<!--Section: Contact v.2--> </div>
+</div>
+
+<main role="main" class="d-flex justify-content-center container">
+<div class="d-flex justify-content-center row">
+<!-- /.blog-main -->
+ 
+  <aside class="col-md-4 blog-sidebar">
+    
+  </aside><!-- /.blog-sidebar -->
+
+</div><!-- /.row -->
+
+</main><!-- /.container -->
+
+
+<div class="form-popup" class="toast" id="myForm" data-autohide="false">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn cancel" >Close</button>
+  </form>
+</div>
+
+<footer class="blog-footer">
+
+<p>
+  <a href="#">Back to top</a>
+</p>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!-- bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+&copy; Copyright 2020 JavaScript Jabber Zone
+
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>JavaScript Jabber Zone</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+    <link rel="stylesheet" href="css/blog.css" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- My links -->
+    <link rel="stylesheet" href="blog.css">
+    <link rel="JavaScript" href="blog.js">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+
+</head>
+
+
